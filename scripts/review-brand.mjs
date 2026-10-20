@@ -26,7 +26,7 @@ try {
     assert.doesNotMatch(await page.locator('body').innerText(), /KB PURE/);
     assert.equal(await page.locator('.hero .brand-logo').count(), 0);
     const headerLogo = await page.locator('.site-header .brand-logo').evaluate(img => ({ src: img.currentSrc, fit: getComputedStyle(img).objectFit }));
-    assert.ok(headerLogo.src.endsWith(width === 390 ? '/lihi-wordmark.png' : '/lihi-skin-studio.png'));
+    assert.ok(headerLogo.src.endsWith('/lihi-skin-studio.png'));
     assert.equal(headerLogo.fit, 'contain');
     assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
     await page.screenshot({ path: `docs/brand-review/${width === 390 ? 'mobile' : 'desktop'}-header-hero.png` });

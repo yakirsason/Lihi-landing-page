@@ -45,4 +45,4 @@
 
 /* Approved logo artwork stays proportional, without backgrounds or effects. */
 @media(max-width:1100px){.brand{width:150px;height:62px}}
-@media(max-width:600px){.header-inner .brand{width:110px;height:35px}.footer-top>.brand-link{flex-basis:100%;justify-content:center}.footer-top .brand{width:150px;height:62px}.footer-name{padding-right:0;border-right:0;text-align:center}}
+@media(max-width:600px){.header-inner .brand{width:144px;height:59px}.footer-top>.brand-link{flex-basis:100%;justify-content:center}.footer-top .brand{width:150px;height:62px}.footer-name{padding-right:0;border-right:0;text-align:center}}

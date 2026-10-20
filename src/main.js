@@ -4,7 +4,7 @@ import { mediaById, mediaSource } from './media.js';
 import { icon } from './icons.js';
 
 const escape = value => String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
-const brand = (responsive = false) => `<picture class="brand" dir="ltr">${responsive ? '<source media="(max-width: 600px)" srcset="/brand/lihi-wordmark.png">' : ''}<img class="brand-logo" src="/brand/lihi-skin-studio.png" width="1278" height="523" alt="${escape(business.brand)}" loading="${responsive ? 'eager' : 'lazy'}" decoding="async"></picture>`;
+const brand = (priority = false) => `<picture class="brand" dir="ltr"><img class="brand-logo" src="/brand/lihi-skin-studio.png" width="1278" height="523" alt="${escape(business.brand)}" loading="${priority ? 'eager' : 'lazy'}" decoding="async"></picture>`;
 const cta = (label = 'לתיאום טיפול בוואטסאפ', message, cls = '') => `<a class="button ${cls}" href="${escape(whatsappUrl(message))}" target="_blank" rel="noopener noreferrer">${icon('whatsapp')}<span>${label}</span>${icon('arrow', 'button-arrow')}</a>`;
 const heading = (en, title, sub = '', cls = '') => `<div class="section-heading ${cls}"><span class="eyebrow" lang="en" dir="ltr">${en}</span><h2>${title}</h2>${sub ? `<p>${sub}</p>` : ''}</div>`;
 
