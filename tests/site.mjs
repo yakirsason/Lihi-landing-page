@@ -28,6 +28,14 @@ try {
   assert.equal(await page.locator('html').getAttribute('dir'), 'rtl');
   assert.equal(await page.locator('main>section').count(), 10);
   assert.equal(await page.locator('h1').count(), 1);
+  assert.match(await page.title(), /LIHI SKIN STUDIO/);
+  assert.doesNotMatch(await page.locator('body').innerText(), /KB PURE/);
+  assert.equal(await page.locator('.brand-logo').count(), 2);
+  for (const logo of await page.locator('.brand-logo').all()) {
+    await logo.scrollIntoViewIfNeeded();
+    await logo.evaluate(img => img.decode());
+    assert.equal(await logo.evaluate(img => getComputedStyle(img).objectFit), 'contain');
+  }
   for (const id of ['hero-portrait', 'about-portrait', 'certification', 'clinic-interior', 'result-01-before', 'result-01-after']) {
     const image = page.locator(`[data-media-id="${id}"] img`).first();
     await image.scrollIntoViewIfNeeded();

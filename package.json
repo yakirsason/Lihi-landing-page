@@ -1,5 +1,5 @@
 {
-  "name": "kb-pure-lihi",
+  "name": "lihi-skin-studio",
   "version": "1.0.0",
   "private": true,
   "type": "module",
@@ -9,7 +9,9 @@
     "preview": "vite preview --host 127.0.0.1",
     "test": "node tests/site.mjs",
     "test:production": "node tests/site.mjs --production",
-    "media:prepare": "node scripts/prepare-media.mjs"
+    "media:prepare": "node scripts/prepare-media.mjs",
+    "brand:prepare": "node scripts/prepare-brand.mjs",
+    "review:brand": "node scripts/review-brand.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.10.2",

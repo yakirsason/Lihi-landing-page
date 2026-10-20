@@ -1,6 +1,8 @@
-# KB PURE — ליהי פרנס
+# LIHI SKIN STUDIO — ליהי פרנס רפפורט
 
 A complete Hebrew RTL skincare landing page, built with semantic HTML, modular JavaScript, CSS and Vite. No backend, database, tracking or external runtime services. The three supplied mockups guide the visual design; none of their photos, reviews or results are reused.
+
+The approved LIHI SKIN STUDIO logo is integrated in the header and footer, with the original LIHI wordmark in the mobile header. See the [brand integration review and screenshots](docs/BRAND-REVIEW.md). Brand assets are already included in `public/brand/`; `npm run brand:prepare` regenerates them from the untouched approved PNG. No deployment is authorized for this branding update until user approval.
 
 ## Run locally
 

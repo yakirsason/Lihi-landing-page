@@ -1,9 +1,9 @@
 export const business = {
-  name: 'ליהי פרנס', brand: 'KB PURE', tagline: 'SKIN INTELLIGENCE',
+  name: 'ליהי פרנס רפפורט', brand: 'LIHI SKIN STUDIO', tagline: 'SKIN STUDIO',
   phone: '+972523430314', displayPhone: '052-343-0314', whatsapp: '972523430314',
   location: 'רמלה', locationConfirmed: false, instagram: '', privacyUrl: '',
   about: [
-    'אני ליהי פרנס. בעיניי, הדרך לעור מטופח מתחילה בהקשבה — לך, לעור שלך ולמה שהוא צריך באמת.',
+    'אני ליהי פרנס רפפורט. בעיניי, הדרך לעור מטופח מתחילה בהקשבה — לך, לעור שלך ולמה שהוא צריך באמת.',
     'כל עור מספר סיפור אחר. לכן אני מאמינה בהתאמה אישית, בגישה רגישה ובתהליך שמאפשר לך להבין את העור שלך ולהרגיש איתו בנוח.'
   ],
   training: '', // Add only after confirming the certificate and exact wording.
