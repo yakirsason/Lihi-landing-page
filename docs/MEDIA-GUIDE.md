@@ -28,10 +28,10 @@
 דוגמה ברשומת תמונת הפתיחה:
 
 ```js
-asset('hero-portrait', 'פתיחה', 'hero/hero-portrait.webp', 'ליהי פרנס רפפורט', '4 / 5', '1440 × 1800', {
+asset('hero-portrait', 'פתיחה', 'hero/hero-portrait.webp', 'ליהי פרנס', '4 / 5', '1440 × 1800', {
   tone: 'hero',
   placeholder: false,
-  alt: 'ליהי פרנס רפפורט בקליניקה',
+  alt: 'ליהי פרנס בקליניקה',
   mobilePath: '/media/hero/hero-mobile.webp',
   mobileDimensions: '900 × 1125',
 })

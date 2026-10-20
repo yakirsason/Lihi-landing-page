@@ -1,4 +1,4 @@
-# KB PURE — ליהי פרנס רפפורט
+# KB PURE — ליהי פרנס
 
 A complete Hebrew RTL skincare landing page, built with semantic HTML, modular JavaScript, CSS and Vite. No backend, database, tracking or external runtime services. The three supplied mockups guide the visual design; none of their photos, reviews or results are reused.
 
