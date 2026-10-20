@@ -1,0 +1,47 @@
+# Dependencies and generated build output
+node_modules/
+dist/
+build/
+coverage/
+.vite/
+.cache/
+test-results/
+playwright-report/
+blob-report/
+*.tsbuildinfo
+
+# Local environment variables and credentials
+.env
+.env.*
+*.env
+*.env.*
+*.local
+.npmrc
+.git-credentials
+.netrc
+.pypirc
+secrets/
+.secrets/
+.aws/
+credentials*.json
+service-account*.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+
+# Hosting and local tool state
+.vercel/
+.openai/
+
+# Logs, editor metadata and operating system files
+*.log
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~

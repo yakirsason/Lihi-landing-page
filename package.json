@@ -1,0 +1,20 @@
+{
+  "name": "kb-pure-lihi",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "node scripts/media-manifest.mjs && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node tests/site.mjs",
+    "test:production": "node tests/site.mjs --production",
+    "media:prepare": "node scripts/prepare-media.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.2",
+    "@playwright/test": "^1.56.0",
+    "sharp": "^0.35.5",
+    "vite": "^6.1.0"
+  }
+}
